@@ -48,7 +48,7 @@
         <div class="section">
             <div class="content">
                 <span class="observation-number">Observation 2</span>
-                <h2>Second Key Finding</h2>
+                <h2>Breakdown of Severity By Barrier Types and Temporality</h2>
                 
                 <div class="graph-container">
                     <!-- Replace with your iframe -->
@@ -57,17 +57,26 @@
                 </div>
                 
                 <p>
-                    Your second observation goes here. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                   Before examining specific barrier types or temporality, we first analyse the overall distribution of severity scores across all reported barriers. 
+                   This provides a baseline understanding of how impactful accessibility issues tend to be citywide 
+                    
                 </p>
                 <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                    mollit anim id est laborum. This section can have different amounts of content 
-                    compared to other sections.
+                    Barrier Types:
+                    We next examine how severity varies by barrier type. By grouping barriers into categories such as missing sidewalks, curb ramp issues, surface problems, 
+                    and obstructions, we can identify which types of barriers tend to pose the greatest accessibility challenges. 
+                    This breakdown reveals that not all barriers are equally impactful, certain categories consistently exhibit higher severity scores, 
+                    indicating that addressing these barrier types may yield outsized improvements in accessibility.
+
                 </p>
                 <p>
-                    Add as many paragraphs as needed to fully explain your analysis and insights. 
-                    The smooth scrolling ensures a pleasant user experience regardless of content length.
+                    Temporary vs Permanent Barriers:
+                    We also compare severity between temporary and permanent barriers. 
+                    Although temporary barriers may be expected to be less impactful, our analysis shows that temporary barriers often exhibit higher average severity.
+                    This may be because temporary barriers, such as construction-related obstructions, 
+                    are more likely to completely block access routes or create sudden, unsafe conditions. As a result, temporality plays an important role in 
+                    understanding accessibility challenges beyond simple barrier counts.
+
                 </p>
             </div>
         </div>
@@ -76,7 +85,7 @@
         <div class="section">
             <div class="content">
                 <span class="observation-number">Observation 3</span>
-                <h2>Third Key Finding</h2>
+                <h2>How to calculate a 'Livability Score'?</h2>
                 
                 <div class="graph-container">
                     <!-- Replace with your iframe -->
@@ -85,13 +94,36 @@
                 </div>
                 
                 <p>
-                    Your third observation and analysis. Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    To compare accessibility across neighborhoods, we define a Livability Score that captures both the quantity and impact of accessibility barriers. 
+                    The score is designed so that higher values indicate more livable neighborhoods.
+                    Our calculation is based on three core components:
+                        - Barrier Count: the total number of reported accessibility barriers in a neighborhood
+                        - Average Severity: the mean severity rating of barriers within the neighborhood
+                        - Temporality: whether barriers are temporary or permanent 
+
                 </p>
                 <p>
-                    Each observation can have varying amounts of content. The layout automatically 
-                    adapts to ensure everything is presented beautifully and remains fully accessible.
+                   First, we compute an impact score for each neighborhood by multiplying the number of barriers by the average severity:
+                   Impact = Barrier Count × Average Severity
+                   To improve interpretability, we then normalize the impact score onto a 0–100 scale, where 100 represents the most accessible neighborhood and 0 represents the least accessible. 
+                   This normalized value is referred to as the Livability Score and forms the basis for all subsequent comparisons.
+
+
                 </p>
+
+                <p>
+                    Top 10 Most Livable Neighborhoods:
+                    Using the livability score, we identify the top 10 most livable neighborhoods in Seattle. 
+                    These neighborhoods are characterized by relatively low barrier counts, lower average severity, or both.
+                    The top 3 are: Westlake, Pike Market, Harbor Island. 
+
+                    Bottom 10 Least Livable Neighborhoods:
+                    The bottom 10 least livable neighborhoods are identified based on livability score. 
+                    These neighborhoods tend to experience a combination of high barrier density and high average severity.
+                    The bottom 3 are: GreenLake, Loyal Height, View Ridge 
+
+                    *Data seen in our final dataset
+                </p> 
             </div>
         </div>
 
