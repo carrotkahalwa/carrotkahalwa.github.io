@@ -1,10 +1,113 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datathon Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is hosted on GitHub Pages.</p>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <div class="container" id="container">
+        <!-- Intro Section -->
+        <div class="section">
+            <div class="content intro">
+                <h1>Datathon Project 2024</h1>
+                <p class="subtitle">Data-Driven Insights & Analysis</p>
+                <button class="start-btn" onclick="nextSection()">Get Started →</button>
+            </div>
+        </div>
+
+        <!-- Observation 1 -->
+        <div class="section">
+            <div class="content">
+                <span class="observation-number">Observation 1</span>
+                <h2>First Key Finding</h2>
+                
+                <div class="graph-container">
+                    <!-- Replace with your iframe -->
+                    <!-- <iframe src="your-graph-url-here"></iframe> -->
+                    <span class="graph-placeholder">Graph 1 - Insert iframe here</span>
+                </div>
+                
+                <p>
+                    This is where you describe your first observation. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+                <p>
+                    You can add multiple paragraphs to explain your findings in detail. The section 
+                    will scroll vertically if the content exceeds the viewport height, while maintaining 
+                    smooth horizontal navigation between observations.
+                </p>
+            </div>
+        </div>
+
+        <!-- Observation 2 -->
+        <div class="section">
+            <div class="content">
+                <span class="observation-number">Observation 2</span>
+                <h2>Second Key Finding</h2>
+                
+                <div class="graph-container">
+                    <!-- Replace with your iframe -->
+                    <!-- <iframe src="your-graph-url-here"></iframe> -->
+                    <span class="graph-placeholder">Graph 2 - Insert iframe here</span>
+                </div>
+                
+                <p>
+                    Your second observation goes here. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum. This section can have different amounts of content 
+                    compared to other sections.
+                </p>
+                <p>
+                    Add as many paragraphs as needed to fully explain your analysis and insights. 
+                    The smooth scrolling ensures a pleasant user experience regardless of content length.
+                </p>
+            </div>
+        </div>
+
+        <!-- Observation 3 -->
+        <div class="section">
+            <div class="content">
+                <span class="observation-number">Observation 3</span>
+                <h2>Third Key Finding</h2>
+                
+                <div class="graph-container">
+                    <!-- Replace with your iframe -->
+                    <!-- <iframe src="your-graph-url-here"></iframe> -->
+                    <span class="graph-placeholder">Graph 3 - Insert iframe here</span>
+                </div>
+                
+                <p>
+                    Your third observation and analysis. Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                    Each observation can have varying amounts of content. The layout automatically 
+                    adapts to ensure everything is presented beautifully and remains fully accessible.
+                </p>
+            </div>
+        </div>
+
+        <!-- Add more observation sections as needed -->
+        
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="prevSection()">←</button>
+        <button class="nav-btn" id="nextBtn" onclick="nextSection()">→</button>
+    </div>
+
+    <!-- Page Indicators -->
+    <div class="page-indicator" id="pageIndicator"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
